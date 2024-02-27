@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{25609B77-58B6-435E-84BE-EE9C3DB2CC2C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{361638D3-D694-43E8-BBF0-289C74BBBCE0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{25609B77-58B6-435E-84BE-EE9C3DB2CC2C} = {25609B77-58B6-435E-84BE-EE9C3DB2CC2C}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{91572702-EF8A-4DBA-927B-AB9182E16A54}"
+	ProjectSection(ProjectDependencies) = postProject
+		{25609B77-58B6-435E-84BE-EE9C3DB2CC2C} = {25609B77-58B6-435E-84BE-EE9C3DB2CC2C}
+		{361638D3-D694-43E8-BBF0-289C74BBBCE0} = {361638D3-D694-43E8-BBF0-289C74BBBCE0}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GardeningTipsService", "GardeningTipsService\GardeningTipsService.csproj", "{38507882-3AE0-48AC-9E61-6E0300AB69AD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GardenCalendaryApi", "GardenCalendaryApi\GardenCalendaryApi.csproj", "{28C73032-F0AC-4F28-B629-6DB96C146BF6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{25609B77-58B6-435E-84BE-EE9C3DB2CC2C} = {25609B77-58B6-435E-84BE-EE9C3DB2CC2C}
+		{361638D3-D694-43E8-BBF0-289C74BBBCE0} = {361638D3-D694-43E8-BBF0-289C74BBBCE0}
+		{91572702-EF8A-4DBA-927B-AB9182E16A54} = {91572702-EF8A-4DBA-927B-AB9182E16A54}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25609B77-58B6-435E-84BE-EE9C3DB2CC2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25609B77-58B6-435E-84BE-EE9C3DB2CC2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25609B77-58B6-435E-84BE-EE9C3DB2CC2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25609B77-58B6-435E-84BE-EE9C3DB2CC2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{361638D3-D694-43E8-BBF0-289C74BBBCE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{361638D3-D694-43E8-BBF0-289C74BBBCE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{361638D3-D694-43E8-BBF0-289C74BBBCE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{361638D3-D694-43E8-BBF0-289C74BBBCE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91572702-EF8A-4DBA-927B-AB9182E16A54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91572702-EF8A-4DBA-927B-AB9182E16A54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91572702-EF8A-4DBA-927B-AB9182E16A54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91572702-EF8A-4DBA-927B-AB9182E16A54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38507882-3AE0-48AC-9E61-6E0300AB69AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38507882-3AE0-48AC-9E61-6E0300AB69AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38507882-3AE0-48AC-9E61-6E0300AB69AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38507882-3AE0-48AC-9E61-6E0300AB69AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28C73032-F0AC-4F28-B629-6DB96C146BF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28C73032-F0AC-4F28-B629-6DB96C146BF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28C73032-F0AC-4F28-B629-6DB96C146BF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28C73032-F0AC-4F28-B629-6DB96C146BF6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2157C22F-0233-4D22-9311-5115ACBB489C}
+	EndGlobalSection
+EndGlobal
